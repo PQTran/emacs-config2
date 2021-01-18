@@ -1,0 +1,5 @@
+(let ((current-dir (get-current-directory)))
+  (load-file (concat current-dir "ui.el"))
+  (load-file (concat current-dir "tweaks.el"))
+  (load-file (concat current-dir "themes.el"))
+  (load-file (concat current-dir "initial-window.el")))

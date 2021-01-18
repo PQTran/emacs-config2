@@ -1,0 +1,5 @@
+(let ((current-dir (get-current-directory)))
+  (load-file (concat current-dir "vcs.el"))
+  (load-file (concat current-dir "completion.el"))
+  ;; (load-file (concat current-dir "linter.el"))
+  )
