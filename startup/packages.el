@@ -4,7 +4,7 @@
 
 ;; package repositories
 ;; https is having issues with certain packages
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 
 ;;; prevents recalling package-initialize after reading init files
