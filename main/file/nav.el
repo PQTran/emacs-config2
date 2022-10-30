@@ -71,6 +71,7 @@
 ;;   (projectile-mode 1))
 
 (use-package projectile
+  :init (setq projectile-switch-project-action 'projectile-dired)
   :config
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (projectile-mode 1))
