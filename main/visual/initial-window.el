@@ -18,7 +18,10 @@
                               (get-monitor desktop-monitor)))
 	 (position (get-monitor-position display-monitor)))
     (setq initial-frame-alist
-	  `((top . ,(cdr position)) (left . ,(car position))))))
+          `((top . ,(cdr position))
+            (left . ,(car position))
+            (width . 120)
+            (height . 30)))))
 
 ;; set default frame size and placement
 (configure-initial-window)

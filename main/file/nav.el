@@ -19,8 +19,15 @@
   (let ((helm-ag-command-option "-g"))
     (helm-do-ag)))
 
-(use-package ag
-  :if (executable-find "ag"))
+;;; consider separating execution and download?
+(use-package exec-path-from-shell
+  :config
+  (when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize)))
+
+(use-package ag)
+;; (use-package ag
+;;   :if (executable-find "ag"))
 
 (use-package helm-ag
   :after (ag)
@@ -64,6 +71,7 @@
 ;;   (projectile-mode 1))
 
 (use-package projectile
+  :init (setq projectile-switch-project-action 'projectile-dired)
   :config
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (projectile-mode 1))

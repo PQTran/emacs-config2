@@ -1,6 +1,6 @@
 ;; font
 ;; alternatively: "Source Code Pro"
-(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 110)
+(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 200)
 
 ;; Chinese font display
 (set-fontset-font "fontset-default" 'han "Source Han Sans TC")
